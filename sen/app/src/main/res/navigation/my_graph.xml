@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/my_graph"
+    app:startDestination="@id/fag1">
+
+    <fragment
+        android:id="@+id/fag1"
+        android:name="com.huso.sen.fag1"
+        android:label="fag1" >
+        <action
+            android:id="@+id/action_fag1_to_fag2"
+            app:destination="@id/fag2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fag2"
+        android:name="com.huso.sen.fag2"
+        android:label="fag2" >
+        <action
+            android:id="@+id/action_fag2_to_fag1"
+            app:destination="@id/fag1" />
+    </fragment>
+</navigation>
